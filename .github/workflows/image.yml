@@ -35,5 +35,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args:
-            - catalogURL=https://stacapi.eoxhub.fairicube.eu/
+          build-args: |
+            catalogURL=https://stacapi.eoxhub.fairicube.eu/
