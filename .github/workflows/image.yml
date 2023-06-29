@@ -32,8 +32,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4.1.1
         with:
-          context: stac-browser
-          file: Dockerfile
+          context: https://github.com/radiantearth/stac-browser/tarball/v3.0.2
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
