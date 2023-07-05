@@ -29,6 +29,9 @@ jobs:
         uses: docker/metadata-action@v4.6.0
         with:
           images: ghcr.io/FAIRiCUBE/browser
+      - name: Copy config.js
+        run: |
+          cp config.js stac-browser/config.js
       - name: Build and push Docker image
         uses: docker/build-push-action@v4.1.1
         with:
