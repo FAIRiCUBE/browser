@@ -25,7 +25,7 @@ module.exports = {
     displayGeoTiffByDefault: false,
     buildTileUrlTemplate: ({href, asset}) => "https://tiles.rdnt.io/tiles/{z}/{x}/{y}@2x?url=" + encodeURIComponent(asset.href.startsWith("/vsi") ? asset.href : href),
     stacProxyUrl: null,
-    pathPrefix: "/services/eoxhub-gateway/",
+    pathPrefix: "/services/eoxhub-gateway/fairicube/stac-browser/",
     historyMode: "history",
     cardViewMode: "cards",
     cardViewSort: "asc",
