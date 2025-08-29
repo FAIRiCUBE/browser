@@ -41,4 +41,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            catalogURL=https://stacapi.eoxhub.fairicube.eu/
+            catalogURL=https://stacapi.fairicube.hub-otc-sc.eox.at/
